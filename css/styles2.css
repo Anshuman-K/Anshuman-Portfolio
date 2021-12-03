@@ -1,0 +1,155 @@
+#projects {
+    padding-top: 90px !important;
+}
+/* utitlity classes  */
+.mar_y {
+    margin: 20px 0;
+}
+
+/* utitlity classes  */
+.mar_y {
+    margin: 20px 0;
+}
+
+.mar_y1 {
+    padding-top: 55px !important;
+}
+
+.c_btn {
+    width: auto;
+    height: 45px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: rgb(46, 46, 46) !important;
+    font-weight: 500 !important;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.btn_div a {
+    border: 3px solid rgb(255, 213, 205);
+}
+
+.btn_primary {
+    border: 3px solid rgb(255, 213, 205);
+}
+
+.btn_primary:hover {
+    transition: all .3s ease-in-out;
+    color: white !important;
+    background-color: rgb(255, 213, 205);
+}
+
+.btn_secondary {
+    background-color: #333;
+    color: rgb(255, 213, 205) !important;
+}
+
+.btn_secondary:hover {
+    transition: all .3s ease-in;
+    background-color: rgb(22, 22, 22);
+    color: #fff !important;
+}
+
+.project_btn {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.rm_link {
+    text-decoration: none !important;
+}
+
+.text-center {
+    text-align: center;
+}
+/* projects css  */
+.main_div {
+    height: auto;
+    background-color: rgb(255, 213, 205);
+    border-radius: 20px;
+    padding: 35px 20px;
+}
+
+.main_div:hover {
+    transition: all .3s ease-in-out;
+    box-shadow: rgb(0 0 0 / 51%) 10px 10px 10px;
+    background: rgb(255, 196, 204);
+}
+
+.m_top {
+    margin: 100px 0 !important;
+}
+
+.main_div>div {
+    height: 100%;
+}
+
+
+.left_div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    object-fit: contain;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.heading {
+    text-align: right;
+    font-size: 52px;
+    font-weight: 700;
+}
+.social-icons {
+    display: flex;
+    padding: 0 90px;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 480px) {
+    .heading {
+        font-size: 26px;
+    }
+    .project_btn {
+        margin-top: 15px !important;
+        /* flex-direction: ; */
+    }
+
+    .project_btn>a {
+        margin-top: 15px;
+    }
+
+    .c_btn {
+        font-size: 15px;
+        height: 33px;
+        padding: 5px 10px;
+    }
+
+    .left_div {
+        height: 250px !important;
+    }
+
+    .left_div img {
+        height: 100%;
+        /* object-fit: fill; */
+        object-fit: cover;
+    }
+
+    .right_div h1 {
+        font-size: 28px
+    }
+
+    .main_div {
+        padding: 35px 0px !important;
+    }
+    .social-icons {
+        padding: 0 25px;
+    }
+    .c_btn {
+        font-size: 16px;
+    }
+    #projects {
+        padding-top: 50px !important;
+    }
+}
