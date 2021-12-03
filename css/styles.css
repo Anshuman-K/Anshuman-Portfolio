@@ -11432,4 +11432,217 @@ section.resume-section .resume-section-content {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
+
+  #projects {
+    padding-top: 90px !important;
+  }
+  .mar_y {
+    margin: 20px 0;
+  }
+  .mar_y1 {
+    padding-top: 55px !important;
+}
+
+.c_btn {
+    width: auto;
+    height: 45px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: rgb(46, 46, 46) !important;
+    font-weight: 500 !important;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.btn_div a {
+    border: 3px solid rgb(255, 213, 205);
+}
+
+.btn_primary {
+    border: 3px solid rgb(255, 213, 205);
+}
+
+.btn_primary:hover {
+    transition: all .3s ease-in-out;
+    color: white !important;
+    background-color: rgb(255, 213, 205);
+}
+
+.btn_secondary {
+    background-color: #333;
+    color: rgb(255, 213, 205) !important;
+}
+
+.btn_secondary:hover {
+    transition: all .3s ease-in;
+    background-color: rgb(22, 22, 22);
+    color: #fff !important;
+}
+
+.project_btn {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.rm_link {
+    text-decoration: none !important;
+}
+
+.text-center {
+    text-align: center;
+}
+[tooltip] {
+  position: relative;
+}
+
+/* Applies to all tooltips */
+[tooltip]::before,
+[tooltip]::after {
+  text-transform: none;
+  font-size: .9em;
+  line-height: 1;
+  user-select: none;
+  pointer-events: none;
+  position: absolute;
+  display: none;
+  opacity: 0;
+}
+
+[tooltip]::before {
+  content: '';
+  border: 5px solid transparent;
+  z-index: 1001;
+}
+
+[tooltip]::after {
+  content: attr(tooltip);
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  min-width: 3em;
+  max-width: 21em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 1ch 1.5ch;
+  border-radius: .3ch;
+  box-shadow: 0 1em 2em -.5em rgba(0, 0, 0, 0.35);
+  background: #333;
+  color: #fff;
+  z-index: 1000;
+}
+
+/* Make the tooltips respond to hover */
+[tooltip]:hover::before,
+[tooltip]:hover::after {
+  display: block;
+}
+
+/* don't show empty tooltips */
+[tooltip='']::before,
+[tooltip='']::after {
+  display: none !important;
+}
+
+
+
+/* FLOW: DOWN */
+[tooltip][flow^="down"]::before {
+  top: calc(100% + 5px);
+  border-top-width: 0;
+  border-bottom-color: #333;
+}
+
+[tooltip][flow^="down"]::after {
+  top: calc(100% + 10px);
+}
+
+[tooltip][flow^="down"]::before,
+[tooltip][flow^="down"]::after {
+  left: 50%;
+  transform: translate(-50%, .5em);
+}
+
+/* FLOW: DOWN */
+[tooltip][flow1^="down"]::before {
+  top: calc(100%);
+  border-top-width: 0;
+  border-bottom-color: #333;
+}
+
+[tooltip][flow1^="down"]::after {
+  top: calc(100% + 6px);
+}
+
+[tooltip][flow1^="down"]::before,
+[tooltip][flow1^="down"]::after {
+  left: 50%;
+  transform: translate(-50%, .5em);
+}
+
+
+
+/* KEYFRAMES */
+@keyframes tooltips-vert {
+  to {
+      opacity: .9;
+      transform: translate(-50%, 0);
+  }
+}
+
+@keyframes tooltips-horz {
+  to {
+      opacity: .9;
+      transform: translate(0, -50%);
+  }
+}
+
+/* FX All The Things */
+[tooltip]:not([flow]):hover::before,
+[tooltip]:not([flow]):hover::after,
+[tooltip][flow^="down"]:hover::before,
+[tooltip][flow^="down"]:hover::after {
+  animation: tooltips-vert 300ms ease-out forwards;
+}
+.main_div {
+  height: auto;
+  background-color: rgb(255, 213, 205);
+  border-radius: 20px;
+  padding: 35px 20px;
+}
+
+.main_div:hover {
+  transition: all .3s ease-in-out;
+  box-shadow: rgb(0 0 0 / 51%) 10px 10px 10px;
+  background: rgb(255, 196, 204);
+}
+
+.m_top {
+  margin: 100px 0 !important;
+}
+
+.main_div>div {
+  height: 100%;
+}
+
+
+.left_div img {
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  object-fit: contain;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.heading {
+  text-align: right;
+  font-size: 52px;
+  font-weight: 700;
+}
+.social-icons {
+  display: flex;
+  padding: 0 90px;
+  justify-content: space-around;
+}
 }
